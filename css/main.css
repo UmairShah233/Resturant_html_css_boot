@@ -282,11 +282,21 @@ z-index: -1;
 }
 
 .section4{
-    background-image:url("../images/5.png");
+    background-image:url("../images/5.PNG");
     background-size: cover;
     background-repeat: no-repeat;
     height: 540px; 
-    
+    position: relative;
+}
+.section4::after{
+   content: "";
+   background-color:#0009;
+   position: absolute;
+   inset: 0;
+}
+.section4 .container{
+    position:relative;
+    z-index: 999;
 }
 
 .section4 .container .para1{
